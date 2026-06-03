@@ -164,6 +164,15 @@
   }
 }
 
+.author__avatar-caption {
+  margin-top: 8px;
+  margin-bottom: 0;
+  text-align: center;
+  font-size: $type-size-7;
+  line-height: 1.2;
+  color: var(--global-text-color-light);
+}
+
 .author__content {
   display: table-cell;
   vertical-align: top;

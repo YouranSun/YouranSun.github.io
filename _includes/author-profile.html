@@ -12,6 +12,9 @@
     {% else %}
     	<img src="{{ author.avatar | prepend: "/images/" | prepend: base_path }}" class="author__avatar" alt="{{ author.name }}"  fetchpriority="high" />
     {% endif %}
+    {% if author.avator_caption or author.avatar_caption %}
+      <p class="author__avatar-caption">{{ author.avator_caption | default: author.avatar_caption }}</p>
+    {% endif %}
   </div>
 
   <div class="author__content">
