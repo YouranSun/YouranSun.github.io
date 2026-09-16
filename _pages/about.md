@@ -7,8 +7,8 @@ redirect_from:
   - /about.html
 ---
 
-<p lang="en">I'm a junior undergraduate at The Chinese University of Hong Kong, Shenzhen, double majoring in <em>Computer Science and Engineering</em> and <em>Interdisciplinary Data Analytics</em>.</p>
-<p lang="zh">我目前是香港中文大学（深圳）计算机科学与技术及跨学科数据分析双主修专业的大三学生。</p>
+<p lang="en">I'm a senior undergraduate at The Chinese University of Hong Kong, Shenzhen, double majoring in <em>Computer Science and Engineering</em> and <em>Interdisciplinary Data Analytics</em>.</p>
+<p lang="zh">我目前是香港中文大学（深圳）计算机科学与技术及跨学科数据分析双主修专业的大四学生。</p>
 
 <p lang="en">My research interests mainly lie in <strong>Data agents</strong> and <strong>LLM-powered data processing</strong>. The general problems I have been thinking about is how to build agentic data systems for hard data tasks, including: (1) what roles agents could play in solving data tasks and as components of database systems; (2) how agents should interact with databases, and how to build agent-friendly data environments; and (3) how to make data agents and agentic data systems work efficiently and reliably.
 Prior to this, I also had rich experience in <strong>Graph data management</strong>.</p>

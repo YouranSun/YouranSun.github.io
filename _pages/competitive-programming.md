@@ -11,24 +11,6 @@ author_profile: true
 <p lang="en">At CUHK-Shenzhen, I served as the <strong>student leader</strong> of the university's 30-member <a href="https://sds-xcpc.github.io/">competitive programming team</a> from Jun 2024 to Dec 2025, coached by <a href="https://fangyixiang.github.io/">Prof. Yixiang Fang</a> and <a href="https://chenhao-ma.github.io/">Prof. Chenhao Ma</a>, with additional advice from <a href="http://chenjb1997.github.io/">Prof. Jingbang Chen</a>. During this time, besides contest participation, we continuously provided related resources to the broader university community.</p>
 <p lang="zh">在2024年6月至2025年12月间，我担任了香港中文大学（深圳）30人的<a href="https://sds-xcpc.github.io/">校程序设计竞赛队</a><strong>学生队长</strong>，教练为<a href="https://fangyixiang.github.io/">方一向教授</a>和<a href="https://chenhao-ma.github.io/">马晨昊教授</a>，同时受<a href="http://chenjb1997.github.io/">陈靖邦教授</a>的顾问指导。在这段时间里，除组织队伍参加比赛外，我们还持续为整个大学提供算法竞赛相关资源。</p>
 
-<div style="display: flex; gap: 10px;">
-  <figure style="width: 29.45%; text-align: center;">
-    <img src="{{ '/images/CCPC-girls.jpg' | relative_url }}" style="width: 100%;">
-    <figcaption>
-      <span lang="en">Winning CCPC Girls' Division, placing 1st nationwide, together with Xiaoxiao and Jiuzhi.</span>
-      <span lang="zh">与涂宵箫、杨久知共同获得 CCPC 女生专场冠军。</span>
-    </figcaption>
-  </figure>
-
-  <figure style="width: 33.55%; text-align: center;">
-    <img src="{{ '/images/GBAIPC.jpg' | relative_url }}" style="width: 100%;">
-    <figcaption>
-      <span lang="en">Contributed to the organization of the 2025 Canton-Hong Kong-Macau Greater Bay Area Programming Contest, a part of <a href="https://www.slai.edu.cn/">SLAI</a>'s first cohort admission.</span>
-      <span lang="zh">参与组织2025年粤港澳大湾区程序设计竞赛；该赛事是<a href="https://www.slai.edu.cn/">深圳河套国家人工智能学院</a>首届招生录取程序的一部分。</span>
-    </figcaption>
-  </figure>
-</div>
-
 <h1><span lang="en">Selected Awards</span><span lang="zh">竞赛奖项</span></h1>
 
 <p lang="en"><strong>College</strong></p>
@@ -88,3 +70,21 @@ author_profile: true
   <li lang="en"><strong>CUHK-Shenzhen's annual competitive programming contests.</strong> We welcome college and high school students nationwide to attend our contests and set two division for experienced and unexperienced participants. 300~500 students join our contest every year. I deeply participated the contest organization and execution in 2024, and served as the leading student organizer in 2025. Supported by these successful experiences, we held the ICPC China Shenzhen Invitational in 2026. (posts for <a href="https://mp.weixin.qq.com/s/TYJgMVE0ewP-qykDglk6Ig">2025</a>, <a href="https://mp.weixin.qq.com/s/HO15ApkFF3ACXIo66RgKEw">2024</a>)</li>
   <li lang="zh"><strong>香港中文大学（深圳）年度算法竞赛。</strong>我们欢迎全国高校及高中生参赛，并设有零基础和有基础两个赛道，每年吸引300~500名选手参赛。我深度参与了2024年赛事的组织与执行，并在2025年担任学生总负责人。基于这些成功经验，我们于2026年承办了 ICPC 中国深圳邀请赛。（推文：<a href="https://mp.weixin.qq.com/s/TYJgMVE0ewP-qykDglk6Ig">2025年</a>、<a href="https://mp.weixin.qq.com/s/HO15ApkFF3ACXIo66RgKEw">2024年</a>）</li>
 </ul>
+
+<div style="display: flex; gap: 10px;">
+  <figure style="width: 29.45%; text-align: center;">
+    <img src="{{ '/images/CCPC-girls.jpg' | relative_url }}" style="width: 100%;">
+    <figcaption>
+      <span lang="en">Winning CCPC Girls' Division, placing 1st nationwide, together with Xiaoxiao and Jiuzhi.</span>
+      <span lang="zh">与涂宵箫、杨久知共同获得 CCPC 女生专场冠军。</span>
+    </figcaption>
+  </figure>
+
+  <figure style="width: 33.55%; text-align: center;">
+    <img src="{{ '/images/GBAIPC.jpg' | relative_url }}" style="width: 100%;">
+    <figcaption>
+      <span lang="en">Contributed to the organization of the 2025 Canton-Hong Kong-Macau Greater Bay Area Programming Contest, a part of <a href="https://www.slai.edu.cn/">SLAI</a>'s first cohort admission.</span>
+      <span lang="zh">参与组织2025年粤港澳大湾区程序设计竞赛；该赛事是<a href="https://www.slai.edu.cn/">深圳河套国家人工智能学院</a>首届招生录取程序的一部分。</span>
+    </figcaption>
+  </figure>
+</div>
