@@ -1,3 +1,41 @@
 <script type="module" src="{{ base_path }}/assets/js/main.min.js"></script>
 
+<script>
+(function () {
+  function setupLangToggle() {
+    var label  = document.getElementById("lang-toggle-label");
+    var toggle = document.getElementById("lang-toggle");
+    var savedLang = localStorage.getItem("lang") || "en";
+
+    if (savedLang === "zh") {
+      document.documentElement.setAttribute("data-lang", "zh");
+    } else {
+      document.documentElement.removeAttribute("data-lang");
+    }
+    if (label) label.textContent = (savedLang === "zh") ? "EN" : "中";
+
+    if (toggle) {
+      toggle.addEventListener("click", function () {
+        var current = document.documentElement.getAttribute("data-lang");
+        var newLang = current === "zh" ? "en" : "zh";
+        localStorage.setItem("lang", newLang);
+        if (newLang === "zh") {
+          document.documentElement.setAttribute("data-lang", "zh");
+          if (label) label.textContent = "EN";
+        } else {
+          document.documentElement.removeAttribute("data-lang");
+          if (label) label.textContent = "中";
+        }
+      });
+    }
+  }
+
+  if (document.readyState !== "loading") {
+    setupLangToggle();
+  } else {
+    document.addEventListener("DOMContentLoaded", setupLangToggle);
+  }
+})();
+</script>
+
 {% include analytics.html %}

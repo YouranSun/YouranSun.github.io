@@ -18,7 +18,7 @@ author_profile: true
     {% assign posts_in_cat = site.publications | where: "category", category[0] | sort: "date" | reverse %}
     {% for post in posts_in_cat %}
       {% unless title_shown %}
-        <h1>{{ category[1].title }}</h1>
+        <h1><span lang="en">{{ category[1].title }}</span>{% if category[1].title_zh %}<span lang="zh">{{ category[1].title_zh }}</span>{% endif %}</h1>
         {% assign title_shown = true %}
       {% endunless %}
       {% include archive-single.html %}

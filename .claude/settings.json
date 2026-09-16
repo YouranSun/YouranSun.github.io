@@ -1,0 +1,16 @@
+{
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "Edit|Write",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "pkill -f 'jekyll serve' 2>/dev/null || true; sleep 0.5; cd /mnt/d/research/YouranSun.github.io && bash run.sh >> /tmp/jekyll.log 2>&1 &",
+            "statusMessage": "Restarting Jekyll..."
+          }
+        ]
+      }
+    ]
+  }
+}

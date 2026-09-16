@@ -13,10 +13,10 @@ title                    : "Youran Sun"
 title_separator          : "-"
 name                     : &name "Youran Sun"
 description              : &description "Youran Sun's academic portfolio"   # Update this with a general description of your site, this is the default if not overridden by a page
-url                      : https://academicpages.github.io # The base hostname & protocol for your site e.g. "https://[your GitHub username].github.io",
+url                      : https://YouranSun.github.io # The base hostname & protocol for your site e.g. "https://[your GitHub username].github.io",
                                                            # or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
-repository               : "academicpages/academicpages.github.io"
+repository               : "YouranSun/YouranSun.github.io"
 
 # Site Author - The following control what appear as part of the author content on the side bar.
 #               If a field is blank the icon and link will not appear, otherwise it will be shown.
@@ -24,12 +24,17 @@ repository               : "academicpages/academicpages.github.io"
 author:
   # Biographic information
   avatar           : "profile.jpg"
-  avator_caption   : "Photo credit: Cuican Hu"
-  name             : "Youran Sun"
-  pronouns         : # example: "she/her"  
-  bio              : "Undergrad @ CUHK(SZ) '27, Database x LLM"
+  avatar_hover     : "profile-2.jpg"
+  avator_caption   : "Shot by my friend Silvia"
+  avator_caption_zh: "由友人 H 拍摄"
+  name             : "Youran Sun 孙悠然"
+  pronouns         : # example: "she/her"
+  bio              : "Undergrad @ CUHK(SZ) '27, \nAgentic Data Systems"
+  bio_zh           : "港中大（深圳）27 届本科生，\n智能数据系统"
   location         : "Shenzhen, China / Hong Kong SAR"
+  location_zh      : "中国深圳 / 香港特别行政区"
   employer         : "The Chinese University of Hong Kong, Shenzhen"
+  employer_zh      : "香港中文大学（深圳）"
   uri              : # URL
   email            : "youransun [at] link [dot] cuhk [dot] edu [dot] cn"
 
@@ -87,12 +92,16 @@ author:
 publication_category:
   books:
     title: 'Books'
+    title_zh: '书籍'
   journals:
-    title: 'Journal Articles'    
+    title: 'Journal Articles'
+    title_zh: '期刊论文'
   conferences:
     title: 'Conference Papers'
+    title_zh: '会议论文'
   manuscripts:
     title: 'Under Review'
+    title_zh: '在审论文'
 
 # Site Settings
 teaser                   :  # filename of teaser fallback teaser image placed in /images/ for social media previews

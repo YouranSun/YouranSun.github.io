@@ -14,9 +14,10 @@ body {
   padding: $masthead-height 0 0;
   font-family: $global-font-family;
   line-height: 1.5;
-  min-height: 100vh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
+  overflow: hidden;
 
   &.overflow--hidden {
     /* when primary navigation is visible, the content in the background won't scroll */
@@ -344,6 +345,14 @@ b, i, strong, em, blockquote, p, q, span, figure, img, h1, h2, header, input, a,
   -webkit-transition: $global-transition;
   transition: $global-transition;
 }
+
+/* ==========================================================================
+   LANGUAGE SWITCHING
+   ========================================================================== */
+
+[lang="zh"] { display: none; }
+html[data-lang="zh"] [lang="zh"] { display: revert; font-size: 0.93em; }
+html[data-lang="zh"] [lang="en"] { display: none; }
 
 /* ==========================================================================
    PRINT STYLES

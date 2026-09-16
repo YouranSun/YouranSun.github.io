@@ -2,7 +2,7 @@
    ARCHIVE
    ========================================================================== */
 
-.archive {
+.archive:not(.page) {
   margin-bottom: 2em;
 
   @include breakpoint($medium) {
@@ -13,7 +13,9 @@
     @include span(10 of 12 last);
     @include prefix(0.5 of 12);
   }
+}
 
+.archive {
   a {
     text-decoration: underline;
 

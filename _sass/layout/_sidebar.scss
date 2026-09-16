@@ -18,8 +18,9 @@
   }
 
   @media screen and (min-width: $sidebar-screen-min-width) {
-    height: 100vh;
+    height: calc(100vh - 3.5rem);
     overflow-y: auto;               // Add scrollbar if the sidebar is too long
+    overflow-x: hidden;
     position: fixed;
     padding-top: $masthead-height;
   }
@@ -53,6 +54,8 @@
     font-family: $sans-serif;
     font-size: $type-size-6;
     line-height: 1.5;
+    overflow-wrap: anywhere;
+    word-break: normal;
   }
 
   img {
@@ -144,6 +147,7 @@
   display: table-cell;
   vertical-align: top;
   width: 36px;
+  text-align: center;
   // set width only, for non-square avatars
   // height: 36px;
 
@@ -152,9 +156,17 @@
     width: auto;
     height: auto;
   }
+}
+
+.author__avatar-image {
+  position: relative;
+  margin: 0 auto;
+  width: 175px;
+  max-width: 100%;
 
   img {
-    max-width: 175px;
+    display: block;
+    width: 100%;
     border-radius: 50%;
 
     @include breakpoint($large) {
@@ -162,15 +174,31 @@
       border: 1px solid var(--global-border-color);
     }
   }
+
+  .author__avatar-hover {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+  }
+
+  &:hover,
+  &:focus-within {
+    .author__avatar-hover {
+      opacity: 1;
+    }
+  }
 }
 
 .author__avatar-caption {
   margin-top: 8px;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 0;
+  max-width: 175px;
   text-align: center;
   font-size: $type-size-7;
   line-height: 1.2;
-  color: var(--global-text-color-light);
+  color: #888;
 }
 
 .author__content {
@@ -234,6 +262,8 @@
   z-index: 10;
   position: relative;
   cursor: pointer;
+  max-width: 100%;
+  overflow-x: hidden;
 
   li:last-child {
     a {
@@ -267,6 +297,8 @@
   z-index: -1;
   box-shadow: 0 0 10px rgba(#000, 0.25);
   cursor: default;
+  max-width: 100%;
+  overflow-x: hidden;
 
   @include breakpoint($large) {
     display: block;
@@ -313,11 +345,27 @@
   }
 
   li {
-    white-space: nowrap;
+    white-space: normal;
+    overflow-wrap: anywhere;
+  }
+
+  li.author__desktop {
+    display: grid;
+    grid-template-columns: 1.75em minmax(0, 1fr);
+    align-items: start;
+  }
+
+  li.author__desktop > i {
+    grid-column: 1;
+    margin-right: 0;
+    padding-right: 0;
+    line-height: 1.5;
   }
 
   a {
-    display: block;
+    display: grid;
+    grid-template-columns: 1.75em minmax(0, 1fr);
+    align-items: start;
     margin-bottom: 5px;
     padding-right: 5px;
     padding-top: 2px;
@@ -325,6 +373,16 @@
     color: inherit;
     font-size: $type-size-5;
     text-decoration: none;
+    white-space: normal;
+    overflow-wrap: anywhere;
+    word-break: normal;
+
+    > i {
+      grid-column: 1;
+      margin-right: 0;
+      padding-right: 0;
+      line-height: 1.5;
+    }
 
     &:hover {
       text-decoration: underline;

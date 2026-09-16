@@ -9,9 +9,11 @@
 
 main:
   - title: "Publications"
+    title_zh: "论文"
     url: /publications/
 
   - title: "Competitive Programming"
+    title_zh: "算法竞赛"
     url: /competitive-programming/
   # - title: "Talks"
   #   url: /talks/
@@ -35,4 +37,5 @@ main:
   #   url: /markdown/
 
   - title: "Misc"
+    title_zh: "杂项"
     url: /misc/

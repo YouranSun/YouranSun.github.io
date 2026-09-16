@@ -8,12 +8,17 @@
   color: var(--global-text-color-light);
 
   clear: both;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 15;
 
   @include breakpoint($large) {
     margin-left: span(2 of 12) + gutter();
   }
 
-  margin-top: 3em;
+  margin-top: 0;
 
   -webkit-animation: intro 0.3s both;
           animation: intro 0.3s both;
@@ -25,9 +30,9 @@
     @include clearfix;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 1em;
+    margin-top: 0;
     max-width: 100%;
-    padding: 0 1em 1em;
+    padding: 0.45em 1em 0.6em;
 
     @include breakpoint($x-large) {
       max-width: $x-large;
@@ -54,6 +59,7 @@
 .page__footer-copyright {
   font-family: $global-font-family;
   font-size: $type-size-7;
+  line-height: 1.35;
 }
 
 .page__footer-follow {
