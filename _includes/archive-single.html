@@ -31,7 +31,7 @@
       <strong>{{ post.title }}</strong>
       {% if post.award %}<strong style="color:#d05ce3;"> ({{ post.award }})</strong>{% endif %}
       <br>
-      {% for author in post.authors %}{% if author contains "*" %}{% assign clean_author = author | remove: "*" %}{% else %}{% assign clean_author = author %}{% endif %}{% if clean_author contains "Youran Sun" %}<strong>{{ clean_author }}</strong>{% else %}{{ clean_author }}{% endif %}{% if author contains "*" %}<sup>*</sup>{% endif %}{% unless forloop.last %}, {% else %}.{% endunless %}{% endfor %}{% if post.authors contains "*" %} <span class="publication-note">(* co-first author)</span>{% endif %}
+      {% assign has_cofirst = false %}{% for author in post.authors %}{% if author contains "*" %}{% assign has_cofirst = true %}{% assign clean_author = author | remove: "*" %}{% else %}{% assign clean_author = author %}{% endif %}{% if clean_author contains "Youran Sun" %}<strong>{{ clean_author }}</strong>{% else %}{{ clean_author }}{% endif %}{% if author contains "*" %}<sup>*</sup>{% endif %}{% unless forloop.last %}, {% else %}.{% endunless %}{% endfor %}{% if has_cofirst %} <span class="publication-note" style="color:#777;">(* co-first author)</span>{% endif %}
       <br>
       {% if post.status == "To appear" %}
         <i>To appear in {{ post.venue }}</i>{% if post.venue_short %}. <strong style="color:#1a73e8;">({{ post.venue_short }})</strong>{% else %}.{% endif %}
