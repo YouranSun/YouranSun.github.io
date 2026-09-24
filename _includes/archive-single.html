@@ -28,32 +28,35 @@
 
 
     <p itemprop="headline">
-      {% if post.venue %}
-        <strong style="color:#1a73e8;"> [{{ post.venue }}]</strong>
-      {% endif %}
-      <strong>{{post.title}}.</strong>
-      {% if post.award %}
-        <strong style="color:#d05ce3;"> ({{ post.award }})</strong>
+      <strong>{{ post.title }}</strong>
+      {% if post.award %}<strong style="color:#d05ce3;"> ({{ post.award }})</strong>{% endif %}
+      <br>
+      {% for author in post.authors %}{% if author contains "*" %}{% assign clean_author = author | remove: "*" %}{% else %}{% assign clean_author = author %}{% endif %}{% if clean_author contains "Youran Sun" %}<strong>{{ clean_author }}</strong>{% else %}{{ clean_author }}{% endif %}{% if author contains "*" %}<sup>*</sup>{% endif %}{% unless forloop.last %}, {% else %}.{% endunless %}{% endfor %}{% if post.authors contains "*" %} <span class="publication-note">(* co-first author)</span>{% endif %}
+      <br>
+      {% if post.status == "To appear" %}
+        <i>To appear in {{ post.venue }}</i>{% if post.venue_short %}. <strong style="color:#1a73e8;">({{ post.venue_short }})</strong>{% else %}.{% endif %}
+      {% else %}
+        <i>{{ post.venue }}</i>{% if post.volume %}, {{ post.volume }}{% if post.issue %}({{ post.issue }}){% endif %}{% endif %}{% if post.pages %}, pp. {{ post.pages }}{% endif %}, {{ post.date | date: "%Y" }}.{% if post.venue_short %} <strong style="color:#1a73e8;">({{ post.venue_short }})</strong>{% endif %}
       {% endif %}
       <br>
-      {% assign n = post.authors | size %}{% for author in post.authors %}{% if author contains "Youran Sun" %}<strong>{{ author }}</strong>{% else %}{{ author }}{% endif %}{% if forloop.index < n %}, {% else %}.{% endif %}{% endfor %}
-      <!-- <br> -->
       {% if post.doi or post.pdf or post.arxiv or post.code %}
+        <span class="publication-links">
         {% if post.doi %}
           <a href="{{ post.doi }}">[DOI]</a>
         {% endif %}
         {% if post.pdf %}
-          {% if post.doi %} | {% endif %}
+          {% if post.doi %}&nbsp;&nbsp;{% endif %}
           <a href="{{ post.pdf }}">[Paper]</a>
         {% endif %}
         {% if post.arxiv %}
-          {% if post.doi or post.pdf %} | {% endif %}
+          {% if post.doi or post.pdf %}&nbsp;&nbsp;{% endif %}
           <a href="{{ post.arxiv }}">[arXiv]</a>
         {% endif %}
         {% if post.code %}
-          {% if post.doi or post.pdf or post.arxiv %} | {% endif %}
+          {% if post.doi or post.pdf or post.arxiv %}&nbsp;&nbsp;{% endif %}
           <a href="{{ post.code }}">[Code]</a>
         {% endif %}
+        </span>
       {% endif %}
     </p>
     

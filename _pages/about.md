@@ -10,7 +10,7 @@ redirect_from:
 <p lang="en">I'm a senior undergraduate at The Chinese University of Hong Kong, Shenzhen, double majoring in <em>Computer Science and Engineering</em> and <em>Interdisciplinary Data Analytics</em>.</p>
 <p lang="zh">我目前是香港中文大学（深圳）计算机科学与技术及跨学科数据分析双主修专业的大四学生。</p>
 
-<p lang="en">My research interests mainly lie in <strong>Data agents</strong> and <strong>LLM-powered data processing</strong>. The general problems I have been thinking about is how to build agentic data systems for hard data tasks, including: (1) what roles agents could play in solving data tasks and as components of database systems; (2) how agents should interact with databases, and how to build agent-friendly data environments; and (3) how to make data agents and agentic data systems work efficiently and reliably.
+<p lang="en">My research interests mainly lie in <strong>Data agents</strong> and <strong>LLM-powered data processing</strong>. A broad set of questions I have been thinking about concerns how to build agentic data systems for hard data tasks, including: (1) what roles agents could play in solving data tasks and as components of database systems; (2) how agents should interact with databases, and how to build agent-friendly data environments; and (3) how to make data agents and agentic data systems work efficiently and reliably.
 Prior to this, I also had rich experience in <strong>Graph data management</strong>.</p>
 <p lang="zh">我的研究兴趣主要集中在<strong>数据智能体（data agents）</strong>和<strong>大语言模型驱动的数据处理</strong>。我最近在思考的问题总体上是关于构建面向复杂数据任务的智能数据系统（agentic data systems）的，包括：（1）智能体（agent）在求解数据任务及作为数据库系统组件时能够扮演什么角色；（2）智能体应如何与数据库交互，以及如何构建对智能体友好的数据环境；（3）如何构建高效、可靠的数据智能体及智能数据系统。在这之前，我在<strong>图数据管理</strong>领域也积累了丰富的经验。</p>
 
